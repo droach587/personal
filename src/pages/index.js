@@ -4,10 +4,7 @@ import Div100vh from 'react-div-100vh'
 import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
-import scrollDirection from '../components/scrollDirection';
 import SEO from "../components/seo"
-
-const ScrollDirection = new scrollDirection();
 
 function IndexPage() {
 
@@ -16,10 +13,10 @@ function IndexPage() {
     let intersectionRoot = document.querySelector('.site-wrapper');
     let observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {
-        if(entry.intersectionRatio ==1){
+        if(entry.intersectionRatio ===1){
           entry.target.classList.add('isActive');
         }
-        if(entry.intersectionRatio == 0){
+        if(entry.intersectionRatio === 0){
           entry.target.classList.remove('isActive');
         }
       });
