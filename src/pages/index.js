@@ -6,6 +6,8 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { Controller, Scene } from 'react-scrollmagic';
+
 function IndexPage() {
 
   const waypointChecker =()=>{
@@ -38,6 +40,13 @@ function IndexPage() {
     }
   }
 
+  const toTop =(e)=>{
+    let wrapper = document.querySelector('.site-wrapper');
+    wrapper.scrollTop = 0;
+    console.log('hu');
+    e.preventDefault();
+  }
+
   const scrollTopCheck = useCallback(() => {
     window.addEventListener('scroll', function(e) {
       let d = document.documentElement;
@@ -64,7 +73,7 @@ function IndexPage() {
       <SEO title="Home" />
       <div className="site-wrapper">
         <Particles className="particlesFixed"/>
-        <Header/>
+        <Header id="top"/>
         <Div100vh className="header-100vh">
           <section className="row align-justify expanded">
             <div className="columns small-12 medium-expand hero__name">
@@ -92,20 +101,28 @@ function IndexPage() {
           </section>
         </Div100vh>
         <section className="section-block">
-          <div className="row">
-            <div className="columns small-12 medium-10">
-              <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name, which makes any family affair (where there are multiple Davids) confusing, but generally risk-averse.</h1>
-            </div>
-          </div>
-          <div className="row">
-            <div className="columns small-10 small-offset-2 medium-9 medium-offset-3">
-              <p className="lead__mini-bio">More importantly, David has 9+ years of proven development experience leading development teams as a creative technologist, technical director, and front-end developer. </p>
-              <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
-              <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a practial problem solver. He believes in being technology-agnostic, but informed and well-rounded; better equipped to solve a wide range of complex business problems.</p>
-              <p className="lead__mini-bio">As a teams leader, David has continually demonstrated the ability to foster great people, not just good developers.</p>
-              <p className="lead__mini-bio">Articulate and with a natural ability to translate complex technical problems into cogent and manageable solutions, David is a strong client-partner and discipline lead.</p>
-            </div>
-          </div>
+          <Controller>
+            <Scene triggerElement="#hp-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+              <div className="row animateScene" id="hp-intro">
+                <div className="columns small-12 medium-10">
+                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name, which makes any family affair (where there are multiple Davids) confusing, but generally risk-averse.</h1>
+                </div>
+              </div>
+            </Scene>
+          </Controller>
+          <Controller>
+            <Scene triggerElement="#hp-lead" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+              <div className="row animateScene" id="hp-lead">
+                <div className="columns small-10 small-offset-2 medium-9 medium-offset-3">
+                  <p className="lead__mini-bio">More importantly, David has 9+ years of proven development experience leading development teams as a creative technologist, technical director, and front-end developer. </p>
+                  <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
+                  <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a practial problem solver. He believes in being technology-agnostic, but informed and well-rounded; better equipped to solve a wide range of complex business problems.</p>
+                  <p className="lead__mini-bio">As a teams leader, David has continually demonstrated the ability to foster great people, not just good developers.</p>
+                  <p className="lead__mini-bio">Articulate and with a natural ability to translate complex technical problems into cogent and manageable solutions, David is a strong client-partner and discipline lead.</p>
+                </div>
+              </div>
+            </Scene>
+          </Controller>
         </section>
 
         <section className="section-block">
@@ -491,7 +508,7 @@ function IndexPage() {
                 <li><a href="https://www.linkedin.com/in/david-roach-v-13ab4a10/" target="blank" rel="noopener noreferrer" className="block__lead">Connect.</a></li>
                 <li><a href="https://www.instagram.com/droach587/" target="blank" rel="noopener noreferrer" className="block__lead">Follow.</a></li>
                 <li><a href="mail&#116;o&#58;dro&#37;&#54;1c&#104;&#37;358%37%&#52;0gmail&#46;com" className="block__lead">Hire.</a> (freelance only)</li>
-                <li><a href="#top" className="block__lead">Top?</a></li>
+                <li><a href="#top" className="block__lead" onClick={toTop}>Top?</a></li>
               </ul>
             </nav>
           </div>
