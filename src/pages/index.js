@@ -5,6 +5,7 @@ import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Rellax from 'rellax'
 
 import { Controller, Scene } from 'react-scrollmagic';
 
@@ -43,7 +44,6 @@ function IndexPage() {
   const toTop =(e)=>{
     let wrapper = document.querySelector('.site-wrapper');
     wrapper.scrollTop = 0;
-    console.log('hu');
     e.preventDefault();
   }
 
@@ -52,9 +52,11 @@ function IndexPage() {
       let d = document.documentElement;
       let offset = d.scrollTop + window.innerHeight;
       let height = d.offsetHeight;
+      let header = document.querySelector('.mainHeader');
 
       if(window.scrollY <= 300){
         removeListItems();
+        header.classList.add('inverted');
       }
 
       if (offset >= height) {
@@ -64,6 +66,12 @@ function IndexPage() {
   }, []);
 
   useEffect(() => {
+    let parallaxElms = document.getElementsByClassName('parallax-target');
+    for (var parallaxTarget of parallaxElms) {
+      new Rellax(parallaxTarget, {
+        wrapper: '.site-wrapper'
+      });
+    }
     waypointChecker();
     scrollTopCheck();
   }, [scrollTopCheck]);
@@ -74,31 +82,53 @@ function IndexPage() {
       <div className="site-wrapper">
         <Particles className="particlesFixed"/>
         <Header id="top"/>
+        <Div100vh className="header-100vh parallax-target">
+          <Controller>
+            <Scene triggerElement="#hp-white" triggerHook="0.9" duration="100%" offset="50%" classToggle="isVisible">
+              <div id="hp-white" className="innerWhite">
+                <section className="row align-justify">
+                  <div className="columns small-12 medium-expand left-left medium-text-center">
+                    <div className="hero__name">
+                      <h2>I Lead Awesome Products.</h2>
+                    </div>
+                    <div className="hero__scroll">
+                      <h4>Scroll to learn more.</h4>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </Scene>
+          </Controller>
+        </Div100vh>
         <Div100vh className="header-100vh">
-          <section className="row align-justify">
-            <div className="columns small-12 medium-expand hero__name">
-              <h2>David <br/>Roach <br/> <em>V</em></h2>
+          <div className="row">
+            <div className="columns">
+            <Controller>
+              <Scene triggerElement="#name-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+                <div id="name-intro" className="row hero__name animateScene">
+                  <div className="columns large-offset-3">
+                    <h2>David <br/>Roach <em>V</em></h2>
+                  </div>
+                </div>
+              </Scene>
+            </Controller>
+            <Controller>
+              <Scene triggerElement="#highlight-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+                <div id="highlight-intro" className="row animateScene">
+                  <div className="columns large-offset-6">
+                    <ul className="hero__highlights">
+                      <li>Teams Leader</li>
+                      <li>Technology Director</li>
+                      <li>Front End Developer</li>
+                      <li>Dog Dad</li>
+                      <li>Helpless Islanders Fan</li>
+                    </ul>
+                  </div>
+                </div>
+              </Scene>
+            </Controller>
             </div>
-            <div className="columns small-12 medium-expand">
-              <ul className="text-right hero__highlights">
-                <li>
-                  Teams Leader
-                </li>
-                <li>
-                  Technology Director
-                </li>
-                <li>
-                  Front End Developer
-                </li>
-                <li>
-                  Dog Dad
-                </li>
-                <li>
-                  Helpless Islanders Fan
-                </li>
-              </ul>
-            </div>
-          </section>
+          </div>
         </Div100vh>
         <section className="section-block">
           <Controller>
