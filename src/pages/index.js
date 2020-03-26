@@ -96,7 +96,7 @@ function IndexPage() {
                       <h2>I Lead Awesome Products.</h2>
                     </div>
                     <div className="hero__scroll">
-                      <h4>Scroll to learn more.</h4>
+                      <h4>Scroll to learn more. <br/>&darr;</h4>
                     </div>
                   </div>
                 </section>
@@ -119,7 +119,7 @@ function IndexPage() {
             <Controller>
               <Scene triggerElement="#highlight-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
                 <div id="highlight-intro" className="row animateScene">
-                  <div className="columns large-offset-6">
+                  <div className="columns small-offset-2 large-offset-6">
                     <ul className="hero__highlights">
                       <li>Teams Leader</li>
                       <li>Technology Director</li>

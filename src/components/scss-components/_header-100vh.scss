@@ -22,9 +22,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    transform: scale(.7, .7);
     *{ color: #333; }
     &.isVisible{
       opacity: 1;
+      transform: scale(1, 1);
       filter: blur(0px);
     }
   }
