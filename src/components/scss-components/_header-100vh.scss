@@ -1,0 +1,8 @@
+.header-100vh{
+  display: flex;
+  align-items: center;
+  > .row{
+    max-width: none;
+    width: 100%;
+  }
+}

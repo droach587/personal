@@ -1,0 +1,18 @@
+.section-block{
+  padding: 3rem 0;
+  @include breakpoint(medium up){
+    padding: 10rem 0;
+  }
+  .row + .row:not(.block__row) {
+    padding-top: 3rem;
+    @include breakpoint(medium up){
+      padding-top: 10rem;
+    }
+  }
+  .row + .block__row{
+    padding-top: 2rem;
+    @include breakpoint(medium up){
+      padding-top: 3rem;
+    }
+  }
+}

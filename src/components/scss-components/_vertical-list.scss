@@ -1,0 +1,14 @@
+.vertical-list{
+  padding: 0;
+  margin: 1rem 0 0 0;
+  @include breakpoint(medium up){
+    margin: 0;
+  }
+  li{
+    display: inline-block;
+    width: 100%;
+  }
+  li + li {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,138 @@
+.skills__percentage{
+  position: absolute;
+  left: 0px;
+  background: white;
+  width: 0%;
+  bottom: 0;
+  transition-duration: .4s;
+  transition-property: width;
+  transition-timing-function: ease-out;
+  height: 5px;
+  @include breakpoint(medium up){
+    height: 10px;
+  }
+  &--75{
+    background: #FF00C1;
+  }
+  &--50{
+    background: #FF6600;
+  }
+}
+
+.skills__note{
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-size: .875rem;
+  color: white;
+  font-weight: 400;
+  opacity: 0;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+
+.skills__line{
+  display: none;
+  visibility: hidden;
+  @include breakpoint(medium up){
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top:1rem;
+    right: 76%;
+    width: 0;
+    height: 1px;
+    border-top: 1px solid $iceBlue;
+    transition-duration: .5s;
+    transition-property: width;
+    transition-timing-function: ease-out;
+  }
+}
+
+.skillsList{
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    width: 100%;
+    font-weight: 800;
+    color: $iceBlue;
+    transition-duration: .4s;
+    transition-property: all;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    @include breakpoint(medium up){
+      font-size: 3rem;
+      line-height: 3rem;
+      padding-left: 25%;
+    }
+    &.isActive{
+      color: white;
+      padding-bottom: 1.5rem;
+      margin-bottom: .5rem;
+      @include breakpoint(medium up){
+        margin-left: 1rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      &.skill--75{ color: #FF00C1; }
+      &.skill--50{ color: #FF6600; }
+      .skills__percentage{
+        width: 100%;
+        @include breakpoint(medium up){
+          width: 20%;
+        }
+        &--75{
+          width: 75%;
+          @include breakpoint(medium up){
+            width: 15%
+          }
+        }
+        &--50{
+          width: 50%;
+          @include breakpoint(medium up){
+          width: 10%
+          }
+        }
+      }
+      .skills__line{
+        @include breakpoint(medium up){
+          width: 10%;
+        }
+      }
+      span.skills__note{
+        opacity: 1;
+        top: auto;
+        bottom: .5rem;
+      }
+      ul.skills__note{
+        opacity: 1;
+      }
+    }
+  }
+  li + li {
+    margin-top: .5rem;
+  }
+}
+
+ul.skills__note{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  bottom: 0;
+  @include breakpoint(medium up){
+    width: 15%;
+    bottom: auto;
+    top:.4rem;
+  }
+  li{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    cursor: default;
+  }
+}

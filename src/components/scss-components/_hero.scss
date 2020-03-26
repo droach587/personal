@@ -1,0 +1,23 @@
+.hero__name *{
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 800;
+}
+
+.hero__name em{
+  color: $iceBlue;
+  font-style: normal;
+}
+
+.hero__highlights{
+  margin: 0;
+  padding: 0;
+  li{
+    width: 100%;
+    display: inline-block;
+    @include breakpoint(medium up){
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+  }
+}

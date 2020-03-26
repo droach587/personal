@@ -1,0 +1,38 @@
+.lead__bio{
+  font-weight: 800;
+  @include breakpoint(medium up){
+    line-height: 5rem;
+    letter-spacing: -2px;
+  }
+}
+
+.lead__mini-bio{
+  @include breakpoint(medium up){
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  & + & {
+    margin-top: 2rem;
+    @include breakpoint(medium up){
+      margin-top: 4rem;
+    }
+  }
+}
+
+.lead__bio, .lead__mini-bio{
+  em{
+    color: $iceBlue;
+    font-style: normal;
+  }
+}
+
+.block__lead{
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  @include breakpoint(medium up){
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+  }
+}

@@ -1,0 +1,35 @@
+.mainNav{
+  margin: 0;
+  padding: 0;
+  li a{
+    display: inline-block;
+  }
+  li{
+    display: inline-block;
+    position: relative;
+    &::after{
+      position: absolute;
+      top: 100%;
+      border-top: 1px solid white;
+      height: 1px;
+      width: 0%;
+      left:0;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+      transition-delay: .05s;
+      transition-property: width;
+      content: '';
+    }
+    &:hover{
+      &::after{
+        width: 100%;
+        left: auto;
+        right:0;
+      }
+    }
+  }
+  li + li { margin-left: 1rem;}
+  @include breakpoint(medium up){
+    li + li { margin-left: 2rem;}
+  }
+}
