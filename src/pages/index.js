@@ -75,7 +75,7 @@ function IndexPage() {
         <Particles className="particlesFixed"/>
         <Header id="top"/>
         <Div100vh className="header-100vh">
-          <section className="row align-justify expanded">
+          <section className="row align-justify">
             <div className="columns small-12 medium-expand hero__name">
               <h2>David <br/>Roach <br/> <em>V</em></h2>
             </div>
