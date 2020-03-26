@@ -13,7 +13,18 @@
   padding-bottom: 2rem;
   }
   &.inverted{
-    filter: invert(1) grayscale(1);
-    background-color: transparent;
+    background-color: rgba(white, 0);
+    h2{
+      color: #333;
+    }
+    .mainNav{
+      a{
+        color: #333;
+      }
+      li::after,
+      li:hover::after{
+        border-color: $iceBlue;
+      }
+    }
   }
 }

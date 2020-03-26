@@ -48,15 +48,19 @@ function IndexPage() {
   }
 
   const scrollTopCheck = useCallback(() => {
-    window.addEventListener('scroll', function(e) {
+    let elem = document.querySelector('.site-wrapper');
+    let header = document.querySelector('.mainHeader');
+    header.classList.add('inverted');
+    elem.addEventListener('scroll', function(e) {
       let d = document.documentElement;
-      let offset = d.scrollTop + window.innerHeight;
+      let offset = d.scrollTop + elem.innerHeight;
       let height = d.offsetHeight;
-      let header = document.querySelector('.mainHeader');
 
-      if(window.scrollY <= 300){
+      if(elem.scrollTop <= 300){
         removeListItems();
         header.classList.add('inverted');
+      }else{
+        header.classList.remove('inverted');
       }
 
       if (offset >= height) {
