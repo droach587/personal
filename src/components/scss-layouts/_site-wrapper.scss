@@ -3,11 +3,22 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
+  position: absolute;
+  left:0;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   @include breakpoint(medium up){
     padding: 0 2rem;
   }
 }
 
 .internal-wrapper-clone{
-  @extend .site-wrapper;
+  max-width: $global-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  @include breakpoint(medium up){
+    padding: 0 2rem;
+  }
 }

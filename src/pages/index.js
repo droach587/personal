@@ -4,20 +4,30 @@ import Div100vh from 'react-div-100vh'
 import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
+import scrollDirection from '../components/scrollDirection';
 import SEO from "../components/seo"
+
+const ScrollDirection = new scrollDirection();
 
 function IndexPage() {
 
   const waypointChecker =()=>{
     let listItems = document.getElementsByClassName('listItem');
-    let observer = new IntersectionObserver((entries, observer) => {
-      const [{ isIntersecting }] = entries
-      if (isIntersecting) {
-        entries[0].target.classList.add("isActive");
-      } else {
-        entries[0].target.classList.remove("isActive");
-      }
-    }, {rootMargin: '-44% 0px -44% 0px', threshold: 0.44});
+    let intersectionRoot = document.querySelector('.site-wrapper');
+    let observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if(entry.intersectionRatio ==1){
+          entry.target.classList.add('isActive');
+        }
+        if(entry.intersectionRatio == 0){
+          entry.target.classList.remove('isActive');
+        }
+      });
+    }, {
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+        rootMargin: '-43% 0px -43% 0px',
+        root: intersectionRoot
+    });
 
     for (var listItem of listItems) {
       observer.observe(listItem);
