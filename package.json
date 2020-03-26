@@ -27,6 +27,7 @@
     "react-particles-js": "^2.7.1",
     "react-scrollmagic": "^2.2.0",
     "react-waypoint": "^9.0.2",
+    "rellax": "^1.12.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
