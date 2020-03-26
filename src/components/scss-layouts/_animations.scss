@@ -1,0 +1,10 @@
+.animateScene{
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: all;
+  transform: translateY(50px);
+  &.isVisible{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
