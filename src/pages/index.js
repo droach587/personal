@@ -13,7 +13,6 @@ function IndexPage() {
     let observer = new IntersectionObserver((entries, observer) => {
       const [{ isIntersecting }] = entries
       if (isIntersecting) {
-        console.log('intersected');
         entries[0].target.classList.add("isActive");
       } else {
         entries[0].target.classList.remove("isActive");
