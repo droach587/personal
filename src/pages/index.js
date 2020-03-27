@@ -5,7 +5,6 @@ import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Rellax from 'rellax'
 
 import { Controller, Scene } from 'react-scrollmagic';
 
@@ -50,7 +49,11 @@ function IndexPage() {
   const scrollTopCheck = useCallback(() => {
     let elem = document.querySelector('.site-wrapper');
     let header = document.querySelector('.mainHeader');
+    let whiteHero = document.querySelector('#hp-white');
+    let particles = document.querySelector('.particlesFixed');
     header.classList.add('inverted');
+    whiteHero.classList.add('isVisible');
+    particles.classList.add('inverted');
     elem.addEventListener('scroll', function(e) {
       let d = document.documentElement;
       let offset = d.scrollTop + elem.innerHeight;
@@ -59,8 +62,12 @@ function IndexPage() {
       if(elem.scrollTop <= 300){
         removeListItems();
         header.classList.add('inverted');
+        whiteHero.classList.add('isVisible');
+        particles.classList.add('inverted');
       }else{
         header.classList.remove('inverted');
+        whiteHero.classList.remove('isVisible');
+        particles.classList.remove('inverted');
       }
 
       if (offset >= height) {
@@ -70,12 +77,6 @@ function IndexPage() {
   }, []);
 
   useEffect(() => {
-    let parallaxElms = document.getElementsByClassName('parallax-target');
-    for (var parallaxTarget of parallaxElms) {
-      new Rellax(parallaxTarget, {
-        wrapper: '.site-wrapper'
-      });
-    }
     waypointChecker();
     scrollTopCheck();
   }, [scrollTopCheck]);
@@ -86,14 +87,12 @@ function IndexPage() {
       <div className="site-wrapper">
         <Particles className="particlesFixed"/>
         <Header id="top"/>
-        <Div100vh className="header-100vh parallax-target">
-          <Controller>
-            <Scene triggerElement="#hp-white" triggerHook="0.9" duration="100%" offset="50%" classToggle="isVisible">
+        <Div100vh className="header-100vh">
               <div id="hp-white" className="innerWhite">
                 <section className="row align-justify">
                   <div className="columns small-12 medium-expand left-left medium-text-center">
                     <div className="hero__name">
-                      <h2>I Lead Awesome Products.</h2>
+                      <h2>I Build Awesome Products.</h2>
                     </div>
                     <div className="hero__scroll">
                       <h4>Scroll to learn more. <br/>&darr;</h4>
@@ -101,8 +100,6 @@ function IndexPage() {
                   </div>
                 </section>
               </div>
-            </Scene>
-          </Controller>
         </Div100vh>
         <Div100vh className="header-100vh">
           <div className="row">

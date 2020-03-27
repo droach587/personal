@@ -6,4 +6,11 @@
   right:0;
   opacity: .3;
   pointer-events: none;
+  z-index: 999;
+  transition-duration: 4s;
+  transition-property: all;
+  filter: invert(0);
+  &.inverted{
+    filter: invert(1);
+  }
 }
