@@ -144,12 +144,14 @@ function IndexPage() {
           <Controller>
             <Scene triggerElement="#hp-lead" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-lead">
-                <div className="columns small-10 small-offset-2 medium-9 medium-offset-3">
+                <div className="columns small-10 small-offset-1 medium-7 medium-offset-3">
                   <p className="lead__mini-bio">More importantly, David has 9+ years of proven development experience leading development teams as a creative technologist, technical director, and front-end developer. </p>
                   <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
                   <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a practial problem solver. He believes in being technology-agnostic, but informed and well-rounded; better equipped to solve a wide range of complex business problems.</p>
                   <p className="lead__mini-bio">As a teams leader, David has continually demonstrated the ability to foster great people, not just good developers.</p>
                   <p className="lead__mini-bio">Articulate and with a natural ability to translate complex technical problems into cogent and manageable solutions, David is a strong client-partner and discipline lead.</p>
+                  <p className="visually-hidden">David has worked with clients such as: Jerry Seinfeld, American Express, Wyndham Hotels, JetBlue, Cadillac, Coca-Cola, Nintendo, and more.</p>
+                  <p className="visually-hidden">If you'd like to learn more about David's experience, please feel free to contact him at: droach587@gmail.com</p>
                 </div>
               </div>
             </Scene>
@@ -347,7 +349,7 @@ function IndexPage() {
           </div>
           <div className="row block__row">
             <div className="columns">
-              <ul className="skillsList skillsList--defined">
+              <ul className="skillsList skillsList--clients">
                 <li className="listItem">
                   Cadillac
                   <ul className="skills__note">

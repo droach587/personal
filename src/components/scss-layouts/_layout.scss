@@ -1,26 +1,26 @@
 html, body{
-  background: #17101D;
-  color: white;
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  background: $background;
+  color: $white;
+  font-family: $mainFontFam;
 }
 
 h2 strong{
   font-weight: 800;
-  color: $iceBlue;
+  color: $highlight;
   letter-spacing: -2px;
 }
 
 a{
-  color: white;
+  color: $white;
   transition-duration: .2s;
   transition-property: color;
   &:visited{
-    color: white;
+    color: $white;
   }
   &:active{
-    color: white;
+    color: $white;
   }
   &:hover{
-    color: $iceBlue;
+    color: $highlight;
   }
 }

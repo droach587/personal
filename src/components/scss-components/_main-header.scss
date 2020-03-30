@@ -7,23 +7,23 @@
   padding-bottom: 1rem;
   z-index: 888;
   backdrop-filter: blur(10px);
-  background-color: rgba(#17101D, .5);
+  background-color: rgba($background, .5);
   @include breakpoint(medium up){
   padding-top: 2rem;
   padding-bottom: 2rem;
   }
   &.inverted{
-    background-color: rgba(white, 0);
+    background-color: rgba($white, 0);
     h2{
-      color: #333;
+      color: $medGray;
     }
     .mainNav{
       a{
-        color: #333;
+        color: $medGray;
       }
       li::after,
       li:hover::after{
-        border-color: $iceBlue;
+        border-color: $highlight;
       }
     }
   }

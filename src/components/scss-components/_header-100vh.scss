@@ -17,13 +17,13 @@
     transition-property: all;
     opacity: 0;
     filter: blur(20px);
-    background: #eee;
+    background: $heroAlt;
     z-index: 99;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     transform: scale(.7, .7);
-    *{ color: #333; }
+    *{ color: $medGray; }
     &.isVisible{
       opacity: 1;
       transform: scale(1, 1);
