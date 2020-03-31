@@ -11,7 +11,9 @@ const Header = () => (
           <ul className="mainNav">
             <li><a href="mail&#116;o&#58;dro&#37;&#54;1c&#104;&#37;358%37%&#52;0gmail&#46;com">Contact</a></li>
             <li><a href="https://www.linkedin.com/in/david-roach-v-13ab4a10/" target="_blank" rel="noopener noreferrer">Resume</a></li>
-            <li><a href="https://github.com/droach587" target="_blank" rel="noopener noreferrer">Github</a></li>
+            <li><a href="https://github.com/droach587" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li className="show-for-medium">|</li>
+            <li><button>Code</button></li>
           </ul>
         </nav>
       </div>

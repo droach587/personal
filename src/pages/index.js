@@ -136,7 +136,7 @@ function IndexPage() {
             <Scene triggerElement="#hp-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-intro">
                 <div className="columns small-12 medium-10">
-                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name, which makes any family affair (where there are multiple Davids) confusing, but generally risk-averse.</h1>
+                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name (hence, "five"), which makes any family affair (where there are multiple Davids) confusing, but generally risk-averse.</h1>
                 </div>
               </div>
             </Scene>
@@ -145,13 +145,57 @@ function IndexPage() {
             <Scene triggerElement="#hp-lead" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-lead">
                 <div className="columns small-10 small-offset-1 medium-7 medium-offset-3">
-                  <p className="lead__mini-bio">More importantly, David has 9+ years of proven development experience leading development teams as a creative technologist, technical director, and front-end developer. </p>
+                  <p className="lead__mini-bio">More importantly, David has 11 years of proven development experience leading development teams as a technical director, and front-end developer. </p>
                   <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
                   <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a practial problem solver. He believes in being technology-agnostic, but informed and well-rounded; better equipped to solve a wide range of complex business problems.</p>
                   <p className="lead__mini-bio">As a teams leader, David has continually demonstrated the ability to foster great people, not just good developers.</p>
                   <p className="lead__mini-bio">Articulate and with a natural ability to translate complex technical problems into cogent and manageable solutions, David is a strong client-partner and discipline lead.</p>
                   <p className="visually-hidden">David has worked with clients such as: Jerry Seinfeld, American Express, Wyndham Hotels, JetBlue, Cadillac, Coca-Cola, Nintendo, and more.</p>
                   <p className="visually-hidden">If you'd like to learn more about David's experience, please feel free to contact him at: droach587@gmail.com</p>
+                </div>
+              </div>
+            </Scene>
+          </Controller>
+        </section>
+
+
+        <section className="section-block">
+          <Controller>
+            <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+              <div className="row animateScene" id="hp-top">
+                <div className="columns">
+                  <h1 className="lead__bio">11 Years</h1>
+                  <h4>of experiences, mostly good</h4>
+                </div>
+                <div className="columns">
+                  <h1 className="lead__bio">One</h1>
+                  <h4>91-Pound Lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
+                </div>
+                <div className="columns">
+                  <h1 className="lead__bio">25+ Brands</h1>
+                  <h4>finance, to travel, hospitality, and automotive</h4>
+                </div>
+              </div>
+            </Scene>
+          </Controller>
+        </section>
+
+        <section className="section-block">
+          <Controller>
+            <Scene triggerElement="#hp-top-1" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+              <div className="row animateScene" id="hp-top-1">
+                <div className="columns">
+                  <h1 className="lead__bio">108 Years</h1>
+                  <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a> which we're slowly bringing back to life</h4>
+                </div>
+                <div className="columns">
+                  <h1 className="lead__bio">Fmaj7 add(b5)</h1>
+                  <h4>my favorite <a className="inline-link" href="https://www.youtube.com/watch?v=v9n14v_inCA" target="_blank" rel="noopener noreferrer">guitar chord</a></h4>
+                </div>
+                <div className="columns">
+                  <h1 className="lead__bio">2 Years</h1>
+                  <h4>and counting, as husband-in-cheif</h4>
+                  <h6>she's my boss</h6>
                 </div>
               </div>
             </Scene>

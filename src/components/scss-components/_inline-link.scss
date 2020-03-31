@@ -1,0 +1,12 @@
+.inline-link{
+  color: $pop100;
+  display: inline-block;
+  border-bottom: 1px dotted $pop100;
+  &:visited, &:active{
+    color: $pop100;
+  }
+  &:hover{
+    color: white;
+    border-color: white;
+  }
+}
