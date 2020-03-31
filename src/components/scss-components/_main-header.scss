@@ -14,8 +14,10 @@
   }
   &.inverted{
     background-color: rgba($white, 0);
-    h2{
-      color: $medGray;
+    .brand-lead{
+      .brand-std-fill{
+        fill: #333;
+      }
     }
     .mainNav{
       a{

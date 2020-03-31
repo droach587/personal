@@ -1,5 +1,7 @@
 .lead__bio{
   font-weight: 800;
+  font-family: $secondFontFam;
+  line-height: 2rem;
   @include breakpoint(medium up){
     line-height: 5rem;
     letter-spacing: -2px;
@@ -26,10 +28,30 @@
   }
 }
 
+.brand-lead{
+  width: 80px;
+  height: auto;
+  .brand-std-fill{
+    transition-duration: 1s;
+    transition-property: all;
+    fill:#fff;
+  }
+}
+
+.brand-elaborate{
+  width: 180px;
+  height: auto;
+  @include breakpoint(medium up){
+    width: 280px;
+    height: auto;
+  }
+}
+
 .block__lead{
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 2.5rem;
+  font-family: $secondFontFam;
   @include breakpoint(medium up){
     font-size: 4rem;
     line-height: 4rem;
@@ -44,6 +66,14 @@
       &:last-child{
         margin-bottom: 0px;
       }
+    }
+  }
+}
+
+.high-stack{
+  @include breakpoint(medium up){
+    h4{
+      letter-spacing: -1px;
     }
   }
 }

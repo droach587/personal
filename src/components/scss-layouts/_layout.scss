@@ -4,12 +4,6 @@ html, body{
   font-family: $mainFontFam;
 }
 
-h2 strong{
-  font-weight: 800;
-  color: $highlight;
-  letter-spacing: -2px;
-}
-
 a{
   color: $white;
   transition-duration: .2s;
@@ -22,5 +16,13 @@ a{
   }
   &:hover{
     color: $highlight;
+  }
+}
+
+footer{
+  .columns + .columns{
+    @include breakpoint(medium down){
+      margin-top: 4rem;
+    }
   }
 }

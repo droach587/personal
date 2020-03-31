@@ -5,6 +5,7 @@ import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BrandBoldSvg from "../components/brandBoldSvg"
 
 import { Controller, Scene } from 'react-scrollmagic';
 
@@ -163,12 +164,12 @@ function IndexPage() {
           <Controller>
             <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene high-stack" id="hp-top">
-                <div className="columns small-6 medium-expand">
-                  <h3 className="block__lead">11 Year</h3>
+                <div className="columns small-12 medium-expand">
+                  <h3 className="block__lead">11 Years</h3>
                   <h4>of experience(s)</h4>
                   <h6>mostly good</h6>
                 </div>
-                <div className="columns small-6 medium-expand">
+                <div className="columns small-12 medium-expand">
                   <h3 className="block__lead">One</h3>
                   <h4>91-Pound Lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
                 </div>
@@ -185,12 +186,12 @@ function IndexPage() {
           <Controller>
             <Scene triggerElement="#hp-top-1" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene high-stack" id="hp-top-1">
-                <div className="columns small-6 medium-expand">
+                <div className="columns small-12 medium-expand">
                   <h3 className="block__lead">108 Years</h3>
                   <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a></h4>
                   <h6>which we're slowly bringing back to life</h6>
                 </div>
-                <div className="columns small-6 medium-expand">
+                <div className="columns small-12 medium-expand">
                   <h3 className="block__lead">Fmaj7 add(b5)</h3>
                   <h4>my favorite <a className="inline-link" href="https://www.youtube.com/watch?v=v9n14v_inCA" target="_blank" rel="noopener noreferrer">guitar chord</a></h4>
                 </div>
@@ -577,10 +578,7 @@ function IndexPage() {
         </section>
 
         <footer className="section-block">
-          <div className="row">
-            <div className="columns small-12 medium-expand">
-              <h2>_<strong>five</strong></h2>
-            </div>
+          <div className="row align-bottom">
             <nav className="columns small-12 medium-expand">
               <ul className="vertical-list">
                 <li><a href="mail&#116;o&#58;dro&#37;&#54;1c&#104;&#37;358%37%&#52;0gmail&#46;com" className="block__lead">Chat.</a></li>
@@ -590,6 +588,13 @@ function IndexPage() {
                 <li><a href="#top" className="block__lead" onClick={toTop}>Top?</a></li>
               </ul>
             </nav>
+            <Controller>
+              <Scene triggerElement="#bold-brand" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
+                  <div id="bold-brand" className="columns small-12 medium-expand animateScene text-center medium-text-right">
+                    <BrandBoldSvg/>
+                  </div>
+                </Scene>
+              </Controller>
           </div>
         </footer>
       </div>

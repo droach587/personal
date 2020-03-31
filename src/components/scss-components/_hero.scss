@@ -3,15 +3,17 @@
   font-size: 4.5rem;
   line-height: 4.5rem;
   letter-spacing: -4px;
+  font-family: $secondFontFam;
   @include breakpoint(medium up){
     font-size: 8rem;
     line-height: 8rem;
-    letter-spacing: -7px;
+    letter-spacing: -3px;
   }
 }
 
 .hero__scroll *{
   font-weight: 200;
+  letter-spacing: -.5px;
 }
 
 .hero__name em{

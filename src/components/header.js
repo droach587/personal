@@ -1,11 +1,12 @@
 import React from "react"
+import BrandSvg from "./BrandSvg";
 
 const Header = () => (
   <header className="mainHeader">
     <div className="internal-wrapper-clone">
       <div className="row expanded align-middle align-justify">
         <div className="columns small-3 medium-expand">
-          <h2>_<strong>five</strong></h2>
+          <BrandSvg/>
         </div>
         <nav className="columns small-9 medium-expand text-right">
           <ul className="mainNav">
