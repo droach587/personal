@@ -1,5 +1,5 @@
 import React from "react"
-import BrandSvg from "BrandSvg";
+import BrandSvg from "brandSvg";
 
 const Header = () => (
   <header className="mainHeader">
