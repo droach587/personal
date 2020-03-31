@@ -164,38 +164,32 @@ function IndexPage() {
           <Controller>
             <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene high-stack" id="hp-top">
+                <div className="columns small-12 medium-12">
+                  <h4>Fast Facts</h4>
+                </div>
                 <div className="columns small-12 medium-expand">
                   <h3 className="block__lead">11 Years</h3>
                   <h4>of experience(s)</h4>
                   <h6>mostly good</h6>
                 </div>
-                <div className="columns small-12 medium-expand">
+                <div className="columns small-12 medium-4">
                   <h3 className="block__lead">One</h3>
                   <h4>91-Pound Lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
                 </div>
-                <div className="columns small-12 medium-expand">
+                <div className="columns small-12 medium-4">
                   <h3 className="block__lead">25+ Brands</h3>
                   <h4>finance, to travel, hospitality, food/beverage, and luxury automotive</h4>
                 </div>
-              </div>
-            </Scene>
-          </Controller>
-        </section>
-
-        <section className="section-block">
-          <Controller>
-            <Scene triggerElement="#hp-top-1" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
-              <div className="row animateScene high-stack" id="hp-top-1">
-                <div className="columns small-12 medium-expand">
+                <div className="columns small-12 medium-4">
                   <h3 className="block__lead">108 Years</h3>
                   <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a></h4>
                   <h6>which we're slowly bringing back to life</h6>
                 </div>
-                <div className="columns small-12 medium-expand">
+                <div className="columns small-12 medium-4">
                   <h3 className="block__lead">Fmaj7 add(b5)</h3>
                   <h4>my favorite <a className="inline-link" href="https://www.youtube.com/watch?v=v9n14v_inCA" target="_blank" rel="noopener noreferrer">guitar chord</a></h4>
                 </div>
-                <div className="columns small-12 medium-expand">
+                <div className="columns small-12 medium-4">
                   <h3 className="block__lead">2 Years</h3>
                   <h4>and counting, as husband-in-cheif</h4>
                   <h6>she's my boss</h6>
