@@ -80,11 +80,18 @@ function IndexPage() {
   useEffect(() => {
     waypointChecker();
     scrollTopCheck();
+    setTimeout(function(){
+      let intro = document.querySelector('.intro');
+      intro.classList.add('inActive');
+    }, 4500);
   }, [scrollTopCheck]);
 
   return (
     <Layout>
       <SEO title="Home" />
+      <div className="intro">
+        <BrandBoldSvg animated="true"/>
+      </div>
       <div className="site-wrapper">
         <Particles className="particlesFixed"/>
         <Header id="top"/>

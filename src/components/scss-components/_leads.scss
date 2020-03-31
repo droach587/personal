@@ -46,6 +46,80 @@
   }
 }
 
+@keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeSlideLeft{
+  0% { transform: translateX(20px); opacity: 0;}
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes fadeSlideRight{
+  0% { transform: translateX(-20px); opacity: 0;}
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes fadeSlideDown{
+  0% { transform: translateY(-20px); opacity: 0;}
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes fadeSlideUp{
+  0% { transform: translateY(20px); opacity: 0;}
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes fadeInQuant{
+  0% { opacity: 0; }
+  100% { opacity: .3; }
+}
+
+%ghost-anim{
+  transition-property: all;
+}
+
+.brand-elaborate{
+  &--animated{
+    width: 320px;
+    height: auto;
+    .st1{
+      fill: #333;
+    }
+    .st0{
+      fill: #333;
+      opacity: 0;
+      animation: 1s 1.5s fadeInQuant forwards;
+      @extend %ghost-anim;
+    }
+    .f, .one{
+      opacity: 0;
+      animation: 1s 1.5s fadeSlideLeft forwards;
+    }
+    .i, .nine{
+      opacity: 0;
+      animation: 1s 1.2s fadeSlideLeft forwards;
+    }
+    .v, .eight{
+      opacity: 0;
+      animation: 1s 1.2s fadeSlideRight forwards;
+    }
+    .e, .seven{
+      opacity: 0;
+      animation: 1s 1.5s fadeSlideRight forwards;
+    }
+    .x{
+      opacity: 0;
+      animation: 1s 1.5s fadeSlideDown forwards;
+    }
+    .est{
+      opacity: 0;
+      animation: 1s 1.5s fadeSlideUp forwards;
+    }
+  }
+}
+
 .block__lead{
   font-weight: 800;
   font-size: 2.5rem;

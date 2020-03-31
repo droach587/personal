@@ -3,7 +3,7 @@ import React from "react"
 import SVG from 'react-inlinesvg'
 import { StaticQuery, graphql } from "gatsby"
 
-const BrandBoldSvg = () => (
+const BrandBoldSvg = ({animated}) => (
   <StaticQuery
     query={graphql`
       query BssNavLogoExpQuery {
@@ -14,7 +14,9 @@ const BrandBoldSvg = () => (
     `}
     render={data => {
       return (
-        <SVG className="brand-elaborate" src={data.file.publicURL} />
+        <>
+          <SVG className={animated ? 'brand-elaborate brand-elaborate--animated' : 'brand-elaborate'} src={data.file.publicURL} />
+        </>
       )
     }}
   />
