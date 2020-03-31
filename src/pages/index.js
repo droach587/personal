@@ -164,8 +164,8 @@ function IndexPage() {
             <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene high-stack" id="hp-top">
                 <div className="columns small-6 medium-expand">
-                  <h3 className="block__lead">11 Year(s)</h3>
-                  <h4>of experiences</h4>
+                  <h3 className="block__lead">11 Year</h3>
+                  <h4>of experience(s)</h4>
                   <h6>mostly good</h6>
                 </div>
                 <div className="columns small-6 medium-expand">
