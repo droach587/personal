@@ -164,8 +164,9 @@ function IndexPage() {
             <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene high-stack" id="hp-top">
                 <div className="columns small-6 medium-expand">
-                  <h3 className="block__lead">11 Years</h3>
-                  <h4>of experiences, mostly good</h4>
+                  <h3 className="block__lead">11 Year(s)</h3>
+                  <h4>of experiences</h4>
+                  <h6>mostly good</h6>
                 </div>
                 <div className="columns small-6 medium-expand">
                   <h3 className="block__lead">One</h3>
@@ -173,7 +174,7 @@ function IndexPage() {
                 </div>
                 <div className="columns small-12 medium-expand">
                   <h3 className="block__lead">25+ Brands</h3>
-                  <h4>finance, to travel, hospitality, and automotive</h4>
+                  <h4>finance, to travel, hospitality, food/beverage, and luxury automotive</h4>
                 </div>
               </div>
             </Scene>
@@ -186,7 +187,8 @@ function IndexPage() {
               <div className="row animateScene high-stack" id="hp-top-1">
                 <div className="columns small-6 medium-expand">
                   <h3 className="block__lead">108 Years</h3>
-                  <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a> which we're slowly bringing back to life</h4>
+                  <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a></h4>
+                  <h6>which we're slowly bringing back to life</h6>
                 </div>
                 <div className="columns small-6 medium-expand">
                   <h3 className="block__lead">Fmaj7 add(b5)</h3>
