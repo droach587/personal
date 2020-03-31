@@ -36,3 +36,14 @@
     letter-spacing: -1px;
   }
 }
+
+.high-stack{
+  @include breakpoint(medium down){
+    .columns{
+      margin-bottom: 2rem;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
