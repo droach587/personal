@@ -144,7 +144,7 @@ function IndexPage() {
             <Scene triggerElement="#hp-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-intro">
                 <div className="columns small-12 medium-10">
-                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name (hence, "five"), which makes any family affair (where there are multiple Davids) confusing, but generally risk-averse.</h1>
+                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name (hence, "five"), which makes any family affair (where there are multiple Davids) pretty complex.</h1>
                 </div>
               </div>
             </Scene>
@@ -153,13 +153,11 @@ function IndexPage() {
             <Scene triggerElement="#hp-lead" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-lead">
                 <div className="columns small-10 small-offset-1 medium-7 medium-offset-3">
-                  <p className="lead__mini-bio">More importantly, David has 11 years of proven development experience leading development teams as a technical director, and front-end developer. </p>
+                  <p className="lead__mini-bio">More importantly, David has 11 years of proven development experience leading development teams as a technical director and front-end developer.</p>
                   <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
-                  <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a practial problem solver. He believes in being technology-agnostic, but informed and well-rounded; better equipped to solve a wide range of complex business problems.</p>
-                  <p className="lead__mini-bio">As a teams leader, David has continually demonstrated the ability to foster great people, not just good developers.</p>
-                  <p className="lead__mini-bio">Articulate and with a natural ability to translate complex technical problems into cogent and manageable solutions, David is a strong client-partner and discipline lead.</p>
-                  <p className="visually-hidden">David has worked with clients such as: Jerry Seinfeld, American Express, Wyndham Hotels, JetBlue, Cadillac, Coca-Cola, Nintendo, and more.</p>
-                  <p className="visually-hidden">If you'd like to learn more about David's experience, please feel free to contact him at: droach587@gmail.com</p>
+                  <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a pragmatic problem solver. He believes in being technology-agnostic, yet informed and well-rounded; better equipped to solve for a broad range of complex business problems.</p>
+                  <p className="lead__mini-bio">As a team leader, David has continuously demonstrated the ability to foster great people, not just good developers.</p>
+                  <p className="lead__mini-bio">Articulate and with a real ability to translate complex technical problems into cogent and flexible solutions, David is a strong client-partner and discipline lead.</p>
                 </div>
               </div>
             </Scene>
@@ -181,16 +179,16 @@ function IndexPage() {
                 </div>
                 <div className="columns small-12 medium-4">
                   <h3 className="block__lead">One</h3>
-                  <h4>91-Pound Lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
+                  <h4>91-pound lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
                 </div>
                 <div className="columns small-12 medium-4">
                   <h3 className="block__lead">25+ Brands</h3>
-                  <h4>finance, to travel, hospitality, food/beverage, and luxury automotive</h4>
+                  <h4>from finance to travel, hospitality, food/beverage, and luxury automotive</h4>
                 </div>
                 <div className="columns small-12 medium-4">
                   <h3 className="block__lead">108 Years</h3>
                   <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a></h4>
-                  <h6>which we're slowly bringing back to life</h6>
+                  <h6>which we're slowly modernizing</h6>
                 </div>
                 <div className="columns small-12 medium-4">
                   <h3 className="block__lead">Fmaj7 add(b5)</h3>
@@ -217,12 +215,12 @@ function IndexPage() {
               <ul className="skillsList">
                 <li className="listItem">
                   HTML
-                  <span className="skills__note">Pretty Darn Good</span>
+                  <span className="skills__note">Pretty darn good</span>
                   <span className="skills__percentage"></span>
                 </li>
                 <li className="listItem">
                   CSS
-                  <span className="skills__note">Like a Second Skin</span>
+                  <span className="skills__note">Like a second-skin</span>
                   <span className="skills__percentage"></span>
                 </li>
                 <li className="listItem">
@@ -237,12 +235,12 @@ function IndexPage() {
                 </li>
                 <li className="skill--75 listItem">
                   TypeScript
-                  <span className="skills__note">Friends, always happy to reconnect.</span>
+                  <span className="skills__note">Friends. Always happy to reconnect.</span>
                   <span className="skills__percentage skills__percentage--75"></span>
                 </li>
                 <li className="listItem">
                   Redux/MobX
-                  <span className="skills__note">To be stateful, or not not to be stateful.</span>
+                  <span className="skills__note">To be stateful, or not not to be stateful?</span>
                   <span className="skills__percentage"></span>
                 </li>
                 <li className="skill--75 listItem">
@@ -252,7 +250,7 @@ function IndexPage() {
                 </li>
                 <li className="listItem">
                   Headless/JAMStack Development
-                  <span className="skills__note">Who needs a head anyway.</span>
+                  <span className="skills__note">Who needs a head anyway?</span>
                   <span className="skills__percentage"></span>
                 </li>
                 <li className="listItem">
