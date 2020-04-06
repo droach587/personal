@@ -196,7 +196,7 @@ function IndexPage() {
                 </div>
                 <div className="columns small-12 medium-4">
                   <h3 className="block__lead">2 Years</h3>
-                  <h4>and counting, as husband-in-cheif</h4>
+                  <h4>and counting, as husband-in-chief</h4>
                   <h6>she's my boss</h6>
                 </div>
               </div>
