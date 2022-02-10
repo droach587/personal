@@ -17,7 +17,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "node-sass-glob-importer": "^5.3.2",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
