@@ -32,9 +32,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sass`,
-      options: {
-        includePaths: ['node_modules/foundation-sites/scss'],
-        importer: globImporter()
+      options:{
+        sassOptions: {
+          includePaths: ['node_modules/foundation-sites/scss',],
+          importer: globImporter()
+        }
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

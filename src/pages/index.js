@@ -1,7 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 
 import Div100vh from 'react-div-100vh'
-import Particles from 'react-particles-js'
 import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -51,10 +50,8 @@ function IndexPage() {
     let elem = document.querySelector('.site-wrapper');
     let header = document.querySelector('.mainHeader');
     let whiteHero = document.querySelector('#hp-white');
-    let particles = document.querySelector('.particlesFixed');
     header.classList.add('inverted');
     whiteHero.classList.add('isVisible');
-    particles.classList.add('inverted');
     elem.addEventListener('scroll', function(e) {
       let d = document.documentElement;
       let offset = d.scrollTop + elem.innerHeight;
@@ -64,11 +61,9 @@ function IndexPage() {
         removeListItems();
         header.classList.add('inverted');
         whiteHero.classList.add('isVisible');
-        particles.classList.add('inverted');
       }else{
         header.classList.remove('inverted');
         whiteHero.classList.remove('isVisible');
-        particles.classList.remove('inverted');
       }
 
       if (offset >= height) {
@@ -93,14 +88,13 @@ function IndexPage() {
         <BrandBoldSvg animated="true"/>
       </div>
       <div className="site-wrapper">
-        <Particles className="particlesFixed"/>
         <Header id="top"/>
         <Div100vh className="header-100vh">
               <div id="hp-white" className="innerWhite">
                 <section className="row align-justify">
                   <div className="columns small-12 medium-expand left-left medium-text-center">
                     <div className="hero__name">
-                      <h2>I Build Awesome Products.</h2>
+                      <h2>I build awesome products.</h2>
                     </div>
                     <div className="hero__scroll">
                       <h4>Scroll to learn more. <br/>&darr;</h4>
@@ -128,9 +122,9 @@ function IndexPage() {
                     <ul className="hero__highlights">
                       <li>Teams Leader</li>
                       <li>Technology Director</li>
-                      <li>Front End Developer</li>
-                      <li>Dog Dad</li>
-                      <li>Helpless Islanders Fan</li>
+                      <li>Developer</li>
+                      <li>Girl Dad</li>
+                      <li>Islanders Fan</li>
                     </ul>
                   </div>
                 </div>
@@ -144,20 +138,9 @@ function IndexPage() {
             <Scene triggerElement="#hp-intro" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
               <div className="row animateScene" id="hp-intro">
                 <div className="columns small-12 medium-10">
-                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>front-end developer</em> in the <em>greater New York City area</em>. David is the 5th of his name (hence, "five"), which makes any family affair (where there are multiple Davids) pretty complex.</h1>
-                </div>
-              </div>
-            </Scene>
-          </Controller>
-          <Controller>
-            <Scene triggerElement="#hp-lead" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
-              <div className="row animateScene" id="hp-lead">
-                <div className="columns small-10 small-offset-1 medium-7 medium-offset-3">
-                  <p className="lead__mini-bio">More importantly, David has 11 years of proven development experience leading development teams as a technical director and front-end developer.</p>
-                  <p className="lead__mini-bio">David has worked with small to large creative and development teams building best-in-class responsive, accessible web applications, microsites, and portals.</p>
-                  <p className="lead__mini-bio">David is craft-focused, an advocate for technology, and a pragmatic problem solver. He believes in being technology-agnostic, yet informed and well-rounded; better equipped to solve for a broad range of complex business problems.</p>
-                  <p className="lead__mini-bio">As a team leader, David has continuously demonstrated the ability to foster great people, not just good developers.</p>
-                  <p className="lead__mini-bio">Articulate and with a real ability to translate complex technical problems into cogent and flexible solutions, David is a strong client-partner and discipline lead.</p>
+                  <h1 className="lead__bio">David Roach is a <em>technology director</em>, and lead <em>web/application developer</em> in the <em>greater New York metro area</em>.</h1>
+                  <h4 className="lg_mt-2">Fueled by over 16 years of experience in marketing and advertising, a seamless blend of creative vision, technical capability, and product development acumen. David is a leader of multi-disciplinary teams building standout web applications and digital-interactive experiences for sectors as varied as pharmaceutical, entertainment, travel, automotive, and finance.</h4>
+                  <h6 className="lg_mt-2">Presently VP, Director of Technology at NEON (an IPG Health Company)</h6>
                 </div>
               </div>
             </Scene>
@@ -168,36 +151,33 @@ function IndexPage() {
         <section className="section-block">
           <Controller>
             <Scene triggerElement="#hp-top" triggerHook="0.9" duration="150%" offset="50%" classToggle="isVisible">
-              <div className="row animateScene high-stack" id="hp-top">
+              <div className="row animateScene high-stack align-justify" id="hp-top">
                 <div className="columns small-12 medium-12">
-                  <h4>Fast Facts</h4>
+                  <h4>Fast Facts (for the SEO)</h4>
                 </div>
-                <div className="columns small-12 medium-expand">
-                  <h3 className="block__lead">11 Years</h3>
-                  <h4>of experience(s)</h4>
-                  <h6>mostly good</h6>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">16 Years</h3>
+                  <h4>of creative development experience(s)</h4>
                 </div>
-                <div className="columns small-12 medium-4">
-                  <h3 className="block__lead">One</h3>
-                  <h4>91-pound lab named <a className="inline-link" href="https://www.instagram.com/barneythechocolate/" target="_blank" rel="noopener noreferrer">Barney</a></h4>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">Leader</h3>
+                  <h4>Develping high-performing teams anchored in understanding, inclusivity, and supportive, collaborative environments.</h4>
                 </div>
-                <div className="columns small-12 medium-4">
-                  <h3 className="block__lead">25+ Brands</h3>
-                  <h4>from finance to travel, hospitality, food/beverage, and luxury automotive</h4>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">40+ Brands</h3>
+                  <h4>From medical, finance, travel, hospitality, food/beverage, and luxury automotive</h4>
                 </div>
-                <div className="columns small-12 medium-4">
-                  <h3 className="block__lead">108 Years</h3>
-                  <h4>the approximate age of <a className="inline-link" href="https://en.wikipedia.org/wiki/1918" target="_blank" rel="noopener noreferrer">our house</a></h4>
-                  <h6>which we're slowly modernizing</h6>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">Mentor</h3>
+                  <h4>Passionate about guiding and developing talent.</h4>
                 </div>
-                <div className="columns small-12 medium-4">
-                  <h3 className="block__lead">Fmaj7 add(b5)</h3>
-                  <h4>my favorite <a className="inline-link" href="https://www.youtube.com/watch?v=v9n14v_inCA" target="_blank" rel="noopener noreferrer">guitar chord</a></h4>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">Coder+Designer</h3>
+                  <h4>Bridging the creative-technical divide effortlessly with a customer-centric mindset.</h4>
                 </div>
-                <div className="columns small-12 medium-4">
-                  <h3 className="block__lead">2 Years</h3>
-                  <h4>and counting, as husband-in-chief</h4>
-                  <h6>she's my boss</h6>
+                <div className="columns small-12 medium-6">
+                  <h3 className="block__lead">Evangelist</h3>
+                  <h4>Simplifying innovation.<br/>One story at a time.</h4>
                 </div>
               </div>
             </Scene>
